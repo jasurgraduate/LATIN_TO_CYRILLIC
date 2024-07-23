@@ -184,7 +184,7 @@ async function copyText() {
 
     // Change the text of the button
     var button = document.getElementById("copyButton");
-    button.innerText = "☑ Text Copied!";
+    button.innerText = "☑ Copied!";
     await delay(3000);
     button.innerText = "✄ Copy!";
 }

@@ -81,7 +81,7 @@ a:hover {
 
     .col-md-6 {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
     }
 
 
@@ -96,6 +96,8 @@ a:hover {
         font-size: 24px;
         /* Slightly larger font size on laptops */
     }
+
+
 
     h3 {
         font-size: 20px;
@@ -136,7 +138,7 @@ a:hover {
         display: flex;
         justify-content: center;
         font-size: 26px;
-        margin: 0;
+        margin-bottom: 15px;
     }
 
     .input-area {
@@ -190,23 +192,17 @@ a:hover {
         /* Ensure this container is positioned */
     }
 
-    #copyButton {
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
-        position: relative;
-    }
 
     /* Buttons */
     button,
     #copyButton,
     #clearButton {
-        padding: 10px 20px;
+        padding: 8px 10px;
         border: none;
         border-radius: 8px;
         background-color: #007bff;
         color: #fff;
-        font-size: 16px;
+        font-size: 12px;
         cursor: pointer;
         transition: background-color 0.3s ease;
     }
@@ -226,6 +222,7 @@ a:hover {
         display: flex;
         justify-content: end;
     }
+
 
 
 }
