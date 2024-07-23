@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Latin to Uzbek Cyrillic converter. Lotinchadan Krillchaga o'girish">
+    <title>Latin to Cyrillic Online Converter v2.0</title>
+
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+
+    <header>
+        <h1>Latin text to Uzbek Cyrillic text converter v2.0 😋&#127829;</h1>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="input-title">Lotincha | Latin</h2>
+                <div class="buttoncont"><button id="clearButton">🗑️ Clear</button></div><textarea
+                    placeholder="Lotincha matnni kiriting" rows="15" oninput="onLatinTextChange(this.value)"></textarea>
+            </div>
+
+            <div class="col-md-6">
+                <h2 class="input-title">Kirillcha | Cyrillic</h2>
+                <div class="buttoncont"><button id="copyButton" onclick="copyText()">✄ Copy all</button></div><textarea
+                    rows="15" placeholder="Kirillcha matn bu yerda ko'rinadi" id="cyrillic_textarea"></textarea>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="hints">
+        <h4>Hints: w=ь | ww=щ, WW=Щ | ii=ы, II=Ы | Ts=Ц, ts=ц</h4>
+    </div>
+
+    <footer>
+        <h3>&copy; 2019-2024 <a href="https://jasurjacob.blogspot.com">Jasur Anorkulov</a> | Feedback:
+            jasur&#64;graduate.org | All rights reserved.</h3>
+    </footer>
+
+    <script src="js/javascript.js"></script>
+</body>
+
+</html>
