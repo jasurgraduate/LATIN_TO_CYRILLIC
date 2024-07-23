@@ -9,14 +9,10 @@ target/
 *.ipr
 logs/*
 out/*
-js/
+# Commenting out js/ to include it
+# js/
 .git
 .project
 .git/COMMIT_EDITMSG
 .sass-cache/
 node_modules/
-
-
-
-
-
