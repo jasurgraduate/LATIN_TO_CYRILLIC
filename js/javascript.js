@@ -16,9 +16,9 @@ function getCyrillicText(latinText) {
         var pos2Txt = latinText[i + 2];
 
         if (!((curLetter == 'y' || curLetter == 'Y')
-                && (pos2Txt == "'" || pos2Txt == "’"))
-                && i != len - 1
-                && !(curLetter == 't' && pos1Txt == 's'
+            && (pos2Txt == "'" || pos2Txt == "’"))
+            && i != len - 1
+            && !(curLetter == 't' && pos1Txt == 's'
                 && latinText[i + 3] == 'z')) {
             var dualLetter = latCyr[curLetter + pos1Txt];
             if (dualLetter) {
@@ -144,7 +144,7 @@ async function clearText() {
     var latinTextareaElem = document.querySelector('textarea[placeholder="Lotincha matnni kiriting"]');
     latinTextareaElem.value = "";
     onLatinTextChange(""); // Clear the Cyrillic text area as well
-    
+
     // Change the button text to "Cleared!" and revert back after 2 seconds
     var button = document.getElementById("clearButton");
     button.innerText = "🚮 Cleared!";
@@ -241,3 +241,34 @@ function handleMouseDown(event) {
 
 // Add event listener for mouse down event on the button
 draggableButton.addEventListener('mousedown', handleMouseDown);
+
+
+// Current year
+document.addEventListener('DOMContentLoaded', function () {
+    const currentYear = new Date().getFullYear();
+    document.getElementById('year').textContent = currentYear;
+});
+
+
+
+// Visitor count
+
+{/* <script>
+    async function incrementVisitorCount() {
+        await fetch('/increment-visitor', {
+            method: 'POST'
+        });
+    }
+
+    async function displayVisitorCount() {
+        const response = await fetch('/visitor-count');
+        const data = await response.json();
+        document.getElementById('visitor-count').textContent = data.count;
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        incrementVisitorCount();
+        displayVisitorCount();
+    });
+</script> */}
+
