@@ -281,7 +281,7 @@ a:hover {
     }
 
     h1 {
-        font-size: 1.75rem;
+        font-size: 1.4rem;
         /* Slightly larger font size on laptops */
     }
 
@@ -361,6 +361,15 @@ a:hover {
         position: relative;
     }
 
+    #banner {
+        width: 20px;
+        height: 20px;
+        border: 2px solid #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f0f0f000;
+      }
     /* Buttons */
     button,
     #copyButton,
