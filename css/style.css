@@ -196,7 +196,9 @@ a:hover {
     /* Buttons */
     button,
     #copyButton,
-    #clearButton {
+    #clearButton,
+    #undoButton,
+    #redoButton {
         padding: 8px 10px;
         border: none;
         border-radius: 8px;
@@ -209,7 +211,9 @@ a:hover {
 
     button:hover,
     #copyButton:hover,
-    #clearButton:hover {
+    #clearButton:hover,
+    #undoButton:hover,
+    #redoButton:hover {
         background-color: #0056b3;
     }
 
@@ -369,7 +373,8 @@ a:hover {
         align-items: center;
         justify-content: center;
         background-color: #f0f0f000;
-      }
+    }
+
     /* Buttons */
     button,
     #copyButton,

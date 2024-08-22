@@ -21,34 +21,40 @@
         <div class="row">
             <div class="col-md-6">
                 <h2 class="input-title">Lotincha | Latin</h2>
-                <div class="buttoncont"><button id="clearButton">🗑️ Clear!</button></div><textarea
-                    placeholder="Lotincha matnni kiriting" rows="15" oninput="onLatinTextChange(this.value)"></textarea>
+                <div class="buttoncont">
+                    <button id="redoButton">↪️ Redo</button> <!-- Redo Button -->
+                    <button id="undoButton">↩️ Undo</button> <!-- Undo Button -->
+                    <button id="clearButton">🗑️ Clear!</button>
+                </div>
+                <textarea placeholder="Enter Latin text here" rows="15" oninput="onLatinTextChange(this.value)"
+                    id="latin_textarea"></textarea>
             </div>
 
             <div class="col-md-6">
                 <h2 class="input-title">Kirillcha | Cyrillic</h2>
-                <div class="buttoncont"><button id="copyButton" onclick="copyText()">✄ Copy!</button></div><textarea
-                    rows="15" placeholder="Kirillcha matn bu yerda ko'rinadi" id="cyrillic_textarea"></textarea>
+                <div class="buttoncont">
+                    <!-- Add this to your HTML -->
+                    <button id="copyButton" onclick="copyCyrillicText()">✄ Copy!</button>
 
+                </div>
+                <textarea rows="15" placeholder="Cyrillic text will be shown here" id="cyrillic_textarea"></textarea>
             </div>
         </div>
     </div>
 
     <div class="hints">
-        <h4>Hints: w=ь | ww=щ, WW=Щ | ii=ы, II=Ы | Ts=Ц, ts=ц</h4>
+        <h4>Hints: w=ь | ww=щ, WW=Щ | qw=ы, QW=Ы | Ts=Ц, ts=ц | Yo=Ё, yo=ё</h4>
     </div>
 
-
-    
-
     <footer>
-        <h3>&copy; 2019-<span id="year"></span> <a href="https://jasurjacob.blogspot.com">jasurlive</a> | All rights reserved. </h3> 
+        <h3>&copy; 2019-<span id="year"></span> <a href="https://jasurjacob.blogspot.com">jasurlive</a> | All rights
+            reserved. </h3>
     </footer>
-    
-    
-      <script src="js/banner.js"></script>
 
+    <script src="js/banner.js"></script>
     <script src="js/javascript.js"></script>
+    <script src="js/undo.js"></script> <!-- Undo/Redo Script -->
+    <script src="js/save.js"></script> <!-- Save Script -->
 </body>
 
 </html>
